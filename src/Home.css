@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #f8fbf1;
+  background: #5a4d6b;
+}
+.home-container {
+  margin: 200px;
+  text-align: center;
+}
+.random-user {
+  font-weight: 900;
+}
+.get-user {
+  font-weight: lighter;
+}
+.User-btn {
+  background: #f8fbf1;
+  color: #5a4d6b;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+}
