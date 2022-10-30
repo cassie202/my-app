@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import App from "./App";
-import Css from "./App.css";
+import "./App.css";
 
 function User() {
   const [users, setUsers] = useState([]);
   const [page, setPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const handleClick = (number) => {
     setPage(number);
@@ -38,7 +36,7 @@ function User() {
               <p className="info">{value.dob.age}</p>
               <p className="info">{value.gender}</p>
 
-              <img src={value.picture.medium} alt="" className="image" />
+              <img src={value.picture.medium} alt="avatar" className="image" />
             </div>
           );
         })}
