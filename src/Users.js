@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import { useNavigate } from "react-router-dom";
 
 function User() {
   const [users, setUsers] = useState([]);
   const [page, setPage] = useState(1);
+  const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
   const handleClick = (number) => {
     setPage(number);
+  };
+  const handleHome = () => {
+    navigate("/");
   };
 
   useEffect(() => {
@@ -74,7 +79,9 @@ function User() {
           {">"}
         </button>
       </div>
-      <button className="Home-btn">Back to Home</button>
+      <button onClick={handleHome} className="Home-btn">
+        Back to Home
+      </button>
     </div>
   );
 }
