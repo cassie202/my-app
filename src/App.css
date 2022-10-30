@@ -50,7 +50,8 @@ span {
 .pagination {
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 10px;
 }
 .previous-btn {
   background: #f8fbf1;
@@ -78,6 +79,6 @@ span {
 }
 .page-num {
   font-size: 18px;
-  font-weight: 900;
-  padding: 15px;
+
+  margin: 10px;
 }
